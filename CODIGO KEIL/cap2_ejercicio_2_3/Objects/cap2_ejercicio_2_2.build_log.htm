@@ -1,0 +1,136 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Jeffry Quino Briceño, UNAC, LIC=32BMM-XTZRF-J6NQ9-4SYS7-JFC84-CXISW
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+D:\CURSOS UDEMY\STM32\DSP ON ARM\DSP-LIBRO\CODIGO KEIL\cap2_ejercicio_2_3\cap2_ejercicio_2_2.uvprojx
+Project File Date:  11/20/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'CORTEX-M4'
+main.c(3): warning: In file included from...
+./hal_config.h(6): warning: no previous prototype for function 'SystemClock_Config' [-Wmissing-prototypes]
+void SystemClock_Config(void) {
+     ^
+./hal_config.h(6): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SystemClock_Config(void) {
+^
+static 
+./hal_config.h(30): warning: no previous prototype for function 'SysTick_Handler' [-Wmissing-prototypes]
+void SysTick_Handler(void){
+     ^
+./hal_config.h(30): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SysTick_Handler(void){
+^
+static 
+2 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=5988 RO-data=440 RW-data=120 ZI-data=1744  
+".\Objects\cap2_ejercicio_2_2.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.14.0.pack
+                Keil.STM32F4xx_DFP.2.14.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: Classic Version: 1.7.6
+   * Component: Common Version: 1.7.6
+   * Component: Cortex Version: 1.7.6
+   * Component: DMA Version: 1.7.6
+   * Component: GPIO Version: 1.7.6
+   * Component: I2C Version: 1.7.6
+   * Component: PWR Version: 1.7.6
+   * Component: RCC Version: 1.7.6
+   * Component: SPI Version: 1.7.6
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F407VGTx
+  .\RTE\_CORTEX-M4
+  C:\Users\Lenovo\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  C:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Device:STM32Cube Framework:1.0.0 (API)
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:STM32Cube Framework:Classic:1.7.6
+      Include file:  MDK\Templates\Inc\stm32f4xx_hal_conf.h
+      Source file:   MDK\Templates\Src\stm32f4xx_it.c
+      Include file:  MDK\Templates\Inc\main.h
+      Source file:   MDK\Templates\Src\main.c
+      Include file:  MDK\Templates_LL\Inc\main.h
+      Source file:   MDK\Templates\Src\stm32f4xx_hal_msp.c
+      Include file:  CMSIS\Driver\Config\RTE_Device.h
+      Source file:   MDK\Templates_LL\Src\main.c
+      Include file:  MDK\Templates\Inc\stm32f4xx_it.h
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.7.6
+      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.7.6
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:DMA:1.7.6
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.7.6
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:I2C:1.7.6
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.7.6
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.7.6
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:SPI:1.7.6
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
