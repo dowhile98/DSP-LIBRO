@@ -1,0 +1,21 @@
+--cpu=Cortex-M4.fp.sp
+".\main.o"
+".\basicmathfunctions.o"
+".\bayesfunctions.o"
+".\commontables.o"
+".\complexmathfunctions.o"
+".\controllerfunctions.o"
+".\distancefunctions.o"
+".\fastmathfunctions.o"
+".\filteringfunctions.o"
+".\matrixfunctions.o"
+".\svmfunctions.o"
+".\statisticsfunctions.o"
+".\supportfunctions.o"
+".\transformfunctions.o"
+".\startup_stm32f407xx.o"
+".\system_stm32f4xx.o"
+--strict --scatter ".\convolucion cmsis.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\convolucion cmsis.map" -o ".\convolucion cmsis.axf"
