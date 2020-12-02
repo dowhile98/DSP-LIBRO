@@ -1,0 +1,212 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Jeffry Quino Briceño, UNAC, LIC=32BMM-XTZRF-J6NQ9-4SYS7-JFC84-CXISW
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+D:\CURSOS UDEMY\STM32\DSP ON ARM\DSP-ARM CORTEX M4\DSP-LIBRO\CODIGO KEIL\cap2_ejercicio_2_23\implementacion irr.uvprojx
+Project File Date:  12/02/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'CORTEX M4'
+main.c(2): warning: In file included from...
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(1220): warning: implicit conversion changes signedness: 'q31_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      signBits = ((uint32_t) (__CLZ( in) - 1));
+                              ~~~~~  ^~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(1224): warning: implicit conversion changes signedness: 'q31_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      signBits = ((uint32_t) (__CLZ(-in) - 1));
+                              ~~~~~ ^~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(1271): warning: implicit conversion changes signedness: 'q15_t' (aka 'short') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      signBits = ((uint32_t)(__CLZ( in) - 17));
+                             ~~~~~  ^~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(1275): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      signBits = ((uint32_t)(__CLZ(-in) - 17));
+                             ~~~~~ ^~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(1279): warning: implicit conversion loses integer precision: 'int' to 'q15_t' (aka 'short') [-Wimplicit-int-conversion]
+    in = (in << signBits);
+       ~  ~~~^~~~~~~~~~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(1295): warning: implicit conversion changes signedness: 'q31_t' (aka 'int') to 'unsigned int' [-Wsign-conversion]
+      out = (q15_t) (((q31_t) out * tempVal) >> 14);
+                      ^~~~~~~~~~~ ~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(1337): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    n1 = __CLZ(hi) - 32;
+         ~~~~~ ^~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(1343): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        n1 = __CLZ(lo);
+             ~~~~~ ^~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(1379): warning: implicit conversion changes signedness: 'unsigned int' to 'int32_t' (aka 'int') [-Wsign-conversion]
+        *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+                    ~ ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(1379): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'unsigned int' [-Wsign-conversion]
+        *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+                                              ~  ~~~^~~~~~~~~~~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(1394): warning: operand of ? changes signedness: 'q63_t' (aka 'long long') to 'uint64_t' (aka 'unsigned long long') [-Wsign-conversion]
+    absNum = num > 0 ? num : -num;
+           ~           ^~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(1394): warning: operand of ? changes signedness: 'q63_t' (aka 'long long') to 'uint64_t' (aka 'unsigned long long') [-Wsign-conversion]
+    absNum = num > 0 ? num : -num;
+           ~                 ^~~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(3203): warning: padding struct 'arm_cfft_instance_f64' with 2 bytes to align 'pTwiddle' [-Wpadded]
+    const float64_t *pTwiddle;         /**< points to the Twiddle factor table. */
+                     ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(3200): warning: padding size of 'arm_cfft_instance_f64' with 2 bytes to alignment boundary [-Wpadded]
+  typedef struct
+          ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(3172): warning: padding struct 'arm_cfft_instance_f32' with 2 bytes to align 'pTwiddle' [-Wpadded]
+    const float32_t *pTwiddle;         /**< points to the Twiddle factor table. */
+                     ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(3169): warning: padding size of 'arm_cfft_instance_f32' with 2 bytes to alignment boundary [-Wpadded]
+  typedef struct
+          ^
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(6510): warning: implicit conversion from 'int32_t' (aka 'int') to 'float' may lose precision [-Wimplicit-int-float-conversion]
+      x0 = S->x1 +  i      * xSpacing;
+                    ^      ~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(6511): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+      x1 = S->x1 + (i + 1) * xSpacing;
+                    ~~^~~  ~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(8583): warning: implicit conversion from 'int32_t' (aka 'int') to 'float' may lose precision [-Wimplicit-int-float-conversion]
+    xdiff = X - xIndex;
+              ~ ^~~~~~
+C:/Users/Lenovo/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include\arm_math.h(8586): warning: implicit conversion from 'int32_t' (aka 'int') to 'float' may lose precision [-Wimplicit-int-float-conversion]
+    ydiff = Y - yIndex;
+              ~ ^~~~~~
+main.c(5): warning: no previous prototype for function 'IIR_filter' [-Wmissing-prototypes]
+void IIR_filter(float b[],float a[], float x[],float y[], int size[])
+     ^
+main.c(5): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void IIR_filter(float b[],float a[], float x[],float y[], int size[])
+^
+static 
+main.c(35): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+float b[K] = {0.002044, 0.004088, 0.002044};
+             ~^~~~~~~~
+main.c(35): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+float b[K] = {0.002044, 0.004088, 0.002044};
+             ~          ^~~~~~~~
+main.c(35): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+float b[K] = {0.002044, 0.004088, 0.002044};
+             ~                    ^~~~~~~~
+main.c(35): warning: no previous extern declaration for non-static variable 'b' [-Wmissing-variable-declarations]
+float b[K] = {0.002044, 0.004088, 0.002044};
+      ^
+main.c(35): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float b[K] = {0.002044, 0.004088, 0.002044};
+^
+main.c(36): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+float a[L] = {1, -1.819168, 0.827343};
+             ~   ^~~~~~~~~
+main.c(36): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+float a[L] = {1, -1.819168, 0.827343};
+             ~              ^~~~~~~~
+main.c(36): warning: no previous extern declaration for non-static variable 'a' [-Wmissing-variable-declarations]
+float a[L] = {1, -1.819168, 0.827343};
+      ^
+main.c(36): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float a[L] = {1, -1.819168, 0.827343};
+^
+main.c(46): warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+        size[L] = L;
+        ^    ~
+main.c(31): note: array 'size' declared here
+int size[3];
+^
+main.c(30): warning: no previous extern declaration for non-static variable 'n' [-Wmissing-variable-declarations]
+int n;
+    ^
+main.c(30): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int n;
+^
+main.c(31): warning: no previous extern declaration for non-static variable 'size' [-Wmissing-variable-declarations]
+int size[3];
+    ^
+main.c(31): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int size[3];
+^
+main.c(32): warning: no previous extern declaration for non-static variable 'x' [-Wmissing-variable-declarations]
+float x[N], y[N];
+      ^
+main.c(32): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float x[N], y[N];
+^
+main.c(32): warning: no previous extern declaration for non-static variable 'y' [-Wmissing-variable-declarations]
+float x[N], y[N];
+            ^
+main.c(32): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float x[N], y[N];
+^
+33 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=916 RO-data=2476 RW-data=24 ZI-data=5744  
+".\Objects\implementacion irr.axf" - 0 Error(s), 33 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+   * Component: DSP Variant: Source Version: 1.8.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_CORTEX_M4
+  C:\Users\Lenovo\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Lenovo\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Include
+  C:\Users\Lenovo\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\PrivateInclude
+  C:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: ARM::CMSIS:DSP:Source:1.8.0
+      Include file:  CMSIS\DSP\Include\arm_math.h
+      Source file:   CMSIS\DSP\Source\BasicMathFunctions\BasicMathFunctions.c
+      Source file:   CMSIS\DSP\Source\BayesFunctions\BayesFunctions.c
+      Source file:   CMSIS\DSP\Source\CommonTables\CommonTables.c
+      Source file:   CMSIS\DSP\Source\ControllerFunctions\ControllerFunctions.c
+      Source file:   CMSIS\DSP\Source\FastMathFunctions\FastMathFunctions.c
+      Source file:   CMSIS\DSP\Source\DistanceFunctions\DistanceFunctions.c
+      Source file:   CMSIS\DSP\Source\FilteringFunctions\FilteringFunctions.c
+      Source file:   CMSIS\DSP\Source\ComplexMathFunctions\ComplexMathFunctions.c
+      Source file:   CMSIS\DSP\Source\MatrixFunctions\MatrixFunctions.c
+      Source file:   CMSIS\DSP\Source\TransformFunctions\TransformFunctions.c
+      Source file:   CMSIS\DSP\Source\SupportFunctions\SupportFunctions.c
+      Source file:   CMSIS\DSP\Source\StatisticsFunctions\StatisticsFunctions.c
+      Source file:   CMSIS\DSP\Source\SVMFunctions\SVMFunctions.c
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
